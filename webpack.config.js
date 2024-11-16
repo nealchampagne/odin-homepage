@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,6 +22,14 @@ export default {
       //   test: /\.css$/i,
       //   use: ["style-loader", "css-loader"],
       // },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      },
       {
         test: /\.(png|svg|jpe?g|gif)$/i,
         type: "asset/resource",
@@ -49,5 +57,10 @@ export default {
       directory: path.join(__dirname, "dist"),
       watch: true,
     },
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
   },
 };
