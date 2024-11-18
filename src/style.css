@@ -1,3 +1,5 @@
+/* Website with mobile-first styling */
+
 * {
   box-sizing: border-box;
 }
@@ -241,6 +243,8 @@ p {
   font-family: 'Roboto';
 }
 
+/* Tablet styling */
+
 @media (640px < width <= 1000px) {
   .diagonal {
     transform: skewY(-15deg);
@@ -316,6 +320,8 @@ p {
   }
 
 }
+
+/* Desktop styling */
 
 @media (width > 1000px) {
   .diagonal {
