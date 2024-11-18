@@ -10,7 +10,7 @@
   --gunmetal: hsl(180, 13%, 20%);
   --rose-quartz: hsl(283, 14%, 72%);
   --citron: hsl(62, 41%, 57%);
-  --rose-taupe: hsl(358, 24%, 52%);
+  --rose-taupe: hsl(358, 50%, 72%);
   --beige: hsl(71, 53%, 87%);
   --shadow: hsl(0, 0%, 40%);
 }
@@ -120,7 +120,7 @@ header {
 }
 
 .mypoketwitter {
-  width: 4rem;
+  width: 2rem;
   height: auto;
 }
 
@@ -195,7 +195,7 @@ footer {
   align-items: center;
   justify-items: center;
   background: var(--rose-taupe);
-  width: 100%;
+  width: 100vw;
 }
 
 .contactcontainer {
@@ -219,6 +219,7 @@ footer {
 .candidphoto {
   width: 100vw;
   padding: 0;
+  display: block;
 }
 
 h2 {
